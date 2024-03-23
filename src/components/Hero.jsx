@@ -4,11 +4,12 @@ import Vector1 from '../assets/Vector.png';
 import BigShoe from '../assets/Big_shoes_1.png'
 import Round1 from '../assets/Round_1.png';
 import BigShoe2 from '../assets/Big_shoes_2.png'
+import cutround from '../assets/Cutround.png'
 
 
 const Hero = () => {
     return (
-        <section className='w-full h-[90vh] py-[4em] relative'>
+        <section className='w-full h-[90vh] py-[4em] relative overflow-hidden'>
             <div className='flex flex-col justify-start items-start px-8'>
                 <div className="flex flex-row items-center absolute ml-2 bottom-[18em] w-[41px] h-[300px]">
                     <img src={Vector1} className="mb-4" alt="Vector1" />
@@ -42,7 +43,7 @@ const Hero = () => {
             <div className='max-sm:hidden relative flex flex-col-reverse top-36'>
                 <div className='absolute right-1 mb-[6em]'>
                     <img src={BigShoe2} alt="" className='' />
-                    <img src={Round1} alt="Round Shape" className='w-[350px] h-[350px] float-right -mt-[20em] -mx-24'  />
+                    <img src={cutround} alt="Round Shape" className=' w-[260px]  float-right -mt-[20em] ' />
                 </div>
             </div>
 
