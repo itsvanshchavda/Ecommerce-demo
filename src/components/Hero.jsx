@@ -3,6 +3,7 @@ import { IoCartOutline } from "react-icons/io5";
 import Vector1 from '../assets/Vector.png';
 import BigShoe from '../assets/Big_shoes_1.png'
 import Round1 from '../assets/Round_1.png';
+import BigShoe2 from '../assets/Big_shoes_2.png'
 
 
 const Hero = () => {
@@ -30,9 +31,23 @@ const Hero = () => {
             <div className='max-sm:hidden relative flex flex-col-reverse top-0'>
                 <div className='absolute left-1/2 transform -translate-x-1/2 mb-[-10em]'>
                     <img src={Round1} alt="Round Shape" />
+                    <p className='font-bold uppercase float-end rotate-90'>10% Off</p>
                     <img src={BigShoe} alt="Big Shoe" className='w-[151px] h-full -mt-36 mx-10' />
+
+                </div>
+
+            </div>
+
+
+            <div className='max-sm:hidden relative flex flex-col-reverse top-36'>
+                <div className='absolute right-1 mb-[6em]'>
+                    <img src={BigShoe2} alt="" className='' />
+                    <img src={Round1} alt="Round Shape" className='w-[350px] h-[350px] float-right -mt-[20em] -mx-24'  />
                 </div>
             </div>
+
+
+
         </section>
     );
 };
